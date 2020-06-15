@@ -5,10 +5,10 @@ Mobile Apps are becoming popular day by day. Today, Everyone owns a smartphone a
 In view of this scenario and keeping industry needs in mind, APSSDC is offering “Android Application Development - FDP” so that the faculty across engineering colleges in the state of Andhra Pradesh gain App Development knowledge and share the same to their students. 
 
 ### Hardware Requirements:
-i3 or above Processor is required
-8 GB RAM is recommended
-Good Internet Connectivity
-Microphone and Speakers facility for Offline training program.
+- i3 or above Processor is required
+- 8 GB RAM is recommended
+- Good Internet Connectivity
+- Microphone and Speakers facility for Offline training program.
 ### Duration :
 36 Hours (3 hours each day X 12 days)
 
