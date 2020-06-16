@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
+    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
     <Button
@@ -16,10 +17,12 @@
         android:background="@color/colorPrimary"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        android:onClick="showToast"
         />
 
     <!--This is the textView that displays the text-->
     <TextView
+        android:id="@+id/count_tv"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_width="match_parent"
@@ -39,6 +42,7 @@
         android:background="@color/colorPrimary"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        android:onClick="showCount"
         />
 
 </LinearLayout>
