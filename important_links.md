@@ -7,3 +7,4 @@
 - [Project Structure In Android - Video](https://youtu.be/m_Vqpn1lCKw)
 - [Creating an AVD and Connecting physical Device - Video](https://youtu.be/6ZKIFB7j_ps)
 - [Read About Toasts Here](https://developer.android.com/guide/topics/ui/notifiers/toasts)
+- [Read About SetText() Method here](https://developer.android.com/reference/android/widget/TextView#setText(int))
