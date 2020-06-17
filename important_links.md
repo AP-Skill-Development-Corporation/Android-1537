@@ -14,3 +14,5 @@
 - [Read About SetText() Method here](https://developer.android.com/reference/android/widget/TextView#setText(int))
 
 #### [Day-2 Recorded Video Link (16-06-2020)](https://youtu.be/nDQMh0qvha8)
+
+- [Read About Intents Here](https://developer.android.com/guide/components/intents-filters)
