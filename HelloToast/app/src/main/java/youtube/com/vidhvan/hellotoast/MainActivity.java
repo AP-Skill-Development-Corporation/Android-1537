@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
         count++;
         mCount.setText(String.valueOf(count));
     }
+
+    public void decrementCount(View view)
+    {
+        count--;
+        mCount.setText(String.valueOf(count));
+    }
 }
