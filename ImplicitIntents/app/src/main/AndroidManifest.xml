@@ -3,7 +3,7 @@
     package="youtube.com.vidhvan.implicitintents">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-    
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

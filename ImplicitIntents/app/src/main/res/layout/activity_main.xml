@@ -21,4 +21,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:id="@+id/openmap"
+        android:hint="Enter any address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="openGMaps"
+        android:text="Open Google Maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="openMapslatlong"
+        android:text="Open Lat Long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>
