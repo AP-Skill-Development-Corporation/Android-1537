@@ -42,7 +42,18 @@ public class MainActivity extends AppCompatActivity {
     public void openMapslatlong(View view)
     {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("geo:0,0?q="+16.482759+","+80.607697+"(PAVAN)"));
+        intent.setData(Uri.parse("geo:0,0?q="+16.482759+","+80.607697+"( PAVAN )"));
+        startActivity(intent);
+    }
+
+    public void openDailer(View view)
+    {
+        EditText editText = findViewById(R.id.phone);
+        String phone = editText.getText().toString();
+
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:"+phone));
+
         startActivity(intent);
     }
 }
