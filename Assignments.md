@@ -9,4 +9,5 @@ Note: The design has to match the picture down here.
 ### 18-06-2020
 
 #### Create an app that looks in the following way!. When the button is clicked, the link entered in the edittext should be shown on the browser. (Open Browser App)
+![Picture](/images/ass2.png)
 
