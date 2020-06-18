@@ -4,3 +4,9 @@
 Note: The design has to match the picture down here.
 
 ![Picture](https://raw.githubusercontent.com/AP-Skill-Development-Corporation/Android-1537/master/images/Blue%20Ocean%20Photo%20Summer%20Instagram%20Post.png)
+
+
+### 18-06-2020
+
+#### Create an app that looks in the following way!. When the button is clicked, the link entered in the edittext should be shown on the browser. (Open Browser App)
+
