@@ -20,3 +20,4 @@
 #### [Day-3 Recorded Video Link (17-06-2020)](https://youtu.be/4_IMPwazHkY)
 
 - [Read About Common Intents](https://developer.android.com/guide/components/intents-common)
+- [Read About ActivityLifeCycle](https://developer.android.com/guide/components/activities/activity-lifecycle)
