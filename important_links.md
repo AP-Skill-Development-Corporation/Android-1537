@@ -23,3 +23,12 @@
 - [Read About ActivityLifeCycle](https://developer.android.com/guide/components/activities/activity-lifecycle)
 
 #### [Day-4 Recorded Video Link (18-06-2020)](https://youtu.be/Oo6S3BEVWOU)
+
+
+### Constraint Layout Notes
+
+- >>> <<< "Represents Wrap Content"
+- |--| |--| "Represents Fixed size"
+- |N| |N| "Represents Match Constraints"
+
+
