@@ -21,3 +21,5 @@
 
 - [Read About Common Intents](https://developer.android.com/guide/components/intents-common)
 - [Read About ActivityLifeCycle](https://developer.android.com/guide/components/activities/activity-lifecycle)
+
+#### [Day-4 Recorded Video Link (18-06-2020)](https://youtu.be/Oo6S3BEVWOU)
