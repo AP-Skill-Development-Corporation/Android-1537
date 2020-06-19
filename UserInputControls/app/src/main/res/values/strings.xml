@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">User Input Controls</string>
+    <string-array name="entries">
+        <item>BMW</item>
+        <item>AUDI</item>
+        <item>KIA</item>
+        <item>Maruthi</item>
+        <item>Volks wagon</item>
+    </string-array>
 </resources>

@@ -3,13 +3,19 @@
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.security.PrivateKey;
 
  public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +24,12 @@ import android.widget.Toast;
     private CheckBox english,telugu,hindi;
     private Switch avail;
     private Button submit;
+    private TextView result;
+    private Spinner spinner;
+
+    private String person_name, person_gender, car_brand;
+    private boolean availability = false;
+    private int lang_known[];
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +38,17 @@ import android.widget.Toast;
 
         initializeAllViews();
 
+        lang_known = new int[3];
+
         // The following code is related to choosing gender with the help of RadioButtons
         gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 int id = group.getCheckedRadioButtonId();
                 if(R.id.male == id){
-                    Toast.makeText(MainActivity.this, "MALE IS SELECTED", Toast.LENGTH_SHORT).show();
+                    person_gender = "Male";
                 }else{
-                    Toast.makeText(MainActivity.this, "FEMALE IS SELECTED", Toast.LENGTH_SHORT).show();
+                    person_gender = "Female";
                 }
             }
         });
@@ -44,9 +58,9 @@ import android.widget.Toast;
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    Toast.makeText(MainActivity.this, "USER SELECTED ENGLISH", Toast.LENGTH_SHORT).show();
+                    lang_known[0] = 1;
                 }else{
-                    Toast.makeText(MainActivity.this, "USER DESELECTED ENGLISH", Toast.LENGTH_SHORT).show();
+                    lang_known[0] = 0;
                 }
             }
         });
@@ -55,9 +69,9 @@ import android.widget.Toast;
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    Toast.makeText(MainActivity.this, "USER SELECTED TELUGU", Toast.LENGTH_SHORT).show();
+                    lang_known[1] = 1;
                 }else{
-                    Toast.makeText(MainActivity.this, "USER DESELECTED TELUGU", Toast.LENGTH_SHORT).show();
+                    lang_known[1] = 0;
                 }
             }
         });
@@ -66,9 +80,9 @@ import android.widget.Toast;
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    Toast.makeText(MainActivity.this, "USER SELECTED HINDI", Toast.LENGTH_SHORT).show();
+                    lang_known[2] = 1;
                 }else{
-                    Toast.makeText(MainActivity.this, "USER DESELECTED HINDI", Toast.LENGTH_SHORT).show();
+                    lang_known[2] = 0;
                 }
             }
         });
@@ -76,11 +90,37 @@ import android.widget.Toast;
         avail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    Toast.makeText(MainActivity.this, "The user selected yes", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(MainActivity.this, "The user selected no", Toast.LENGTH_SHORT).show();
-                }
+                availability = isChecked;
+            }
+        });
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                car_brand = (String) parent.getAdapter().getItem(position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                person_name = name.getText().toString();
+                result.setText("Name: "+person_name+"\n");
+                result.append("Gender: "+person_gender+"\n");
+                result.append("Languages Known are: \n");
+                if(lang_known[0] == 1)
+                    result.append("English \n");
+                if(lang_known[1] == 1)
+                    result.append("Telugu\n");
+                if(lang_known[2] == 1)
+                    result.append("Hindi\n");
+                result.append("Is Available ? "+availability+"\n");
+                result.append("CAR BRAND "+car_brand);
             }
         });
     }
@@ -94,5 +134,7 @@ import android.widget.Toast;
          hindi = findViewById(R.id.hindi);
          avail = findViewById(R.id.avail);
          submit = findViewById(R.id.submit);
+         result = findViewById(R.id.result);
+         spinner = findViewById(R.id.spinner);
      }
  }
