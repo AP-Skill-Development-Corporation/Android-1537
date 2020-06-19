@@ -32,3 +32,7 @@
 - |N| |N| "Represents Match Constraints"
 
 
+- [Read About RadioButtons Here](https://developer.android.com/guide/topics/ui/controls/radiobutton)
+- [Read About RadioGroup Here](https://developer.android.com/reference/android/widget/RadioGroup)
+- [Read About Spinner Here](https://developer.android.com/guide/topics/ui/controls/spinner)
+
