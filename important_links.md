@@ -40,4 +40,5 @@
 
 - [Read About Menus here](https://developer.android.com/guide/topics/ui/menus)
 - [Read About Dialogs Here](https://developer.android.com/guide/topics/ui/dialogs)
+- [Get Started With Material Design](https://material.io/develop/android/docs/getting-started/)
 
