@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/first"
-        android:title="First Option" />
+        android:title="First Option"
+        android:icon="@drawable/umbrella"
+        app:showAsAction="always"
+        />
     <item
         android:id="@+id/second"
-        android:title="Second Option" />
+        android:title="Second Option"
+        app:showAsAction="always"
+        />
     <group>
         <item
             android:id="@+id/third"
