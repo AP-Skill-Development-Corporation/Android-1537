@@ -39,4 +39,5 @@
 #### [Day-5 Recorded Video Link (19-06-2020)](https://youtu.be/4RSTiv3pDGc)
 
 - [Read About Menus here](https://developer.android.com/guide/topics/ui/menus)
+- [Read About Dialogs Here](https://developer.android.com/guide/topics/ui/dialogs)
 
