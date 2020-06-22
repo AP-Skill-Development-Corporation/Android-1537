@@ -44,4 +44,5 @@
 - [Get Started With Material Design](https://material.io/develop/android/docs/getting-started/)
 - [Read About Fragment Lifecycle here](https://developer.android.com/guide/components/fragments)
 
+#### [Day-6 Recorded Video Link Part-1 (20-06-2020)](https://youtu.be/mAX6BqMiQKc)
 #### [Day-6 Recorded Video Link Part-2 (20-06-2020)](https://youtu.be/y2SwmoDgVQs)
