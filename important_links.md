@@ -50,3 +50,4 @@
 - [Read About Retrofit Here](https://square.github.io/retrofit/)
 - [Read About Volley Here](https://developer.android.com/training/volley)
 - [Read About Okhttp Here](https://square.github.io/okhttp/)
+- [Read About JSONExceptions here](https://developer.android.com/reference/org/json/JSONException)
