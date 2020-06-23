@@ -6,4 +6,4 @@
 
 - [Important links given during the session - Recorded Video Links are Here](/important_links.md)
 
-#### Hello World Code is in this [link](/HelloWorld)
+#### Hello World Code is in this [link](https://github.com/AP-Skill-Development-Corporation/Android-1537/tree/master/HelloWorld)
