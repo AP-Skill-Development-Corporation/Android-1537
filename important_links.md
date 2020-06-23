@@ -51,3 +51,6 @@
 - [Read About Volley Here](https://developer.android.com/training/volley)
 - [Read About Okhttp Here](https://square.github.io/okhttp/)
 - [Read About JSONExceptions here](https://developer.android.com/reference/org/json/JSONException)
+
+#### [Day-7 Recorded Video Link Part-1 (22-06-2020)](https://youtu.be/Ydn84YvrhrA?list=PLodYIve2fV8aMnScAdRoy5CZaTCtnHCAv&t=4)
+#### [Day-7 Recorded Video Link Part-2 (22-06-2020)](https://youtu.be/UaTulQulvg4?list=PLodYIve2fV8aMnScAdRoy5CZaTCtnHCAv)
