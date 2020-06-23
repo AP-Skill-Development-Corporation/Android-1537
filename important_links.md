@@ -46,3 +46,7 @@
 
 #### [Day-6 Recorded Video Link Part-1 (20-06-2020)](https://youtu.be/mAX6BqMiQKc)
 #### [Day-6 Recorded Video Link Part-2 (20-06-2020)](https://youtu.be/y2SwmoDgVQs)
+
+- [Read About Retrofit Here](https://square.github.io/retrofit/)
+- [Read About Volley Here](https://developer.android.com/training/volley)
+- [Read About Okhttp Here](https://square.github.io/okhttp/)
