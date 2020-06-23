@@ -3,3 +3,5 @@
 ### Workshop from 15-06-2020 to 27-06-2020
 
 [Syllabus can be seen here](/syllabus.md)
+
+[Important links given during the session - Recorded Video Links are Here](/important_links.md)
