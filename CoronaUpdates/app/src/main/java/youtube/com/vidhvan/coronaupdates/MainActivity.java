@@ -14,6 +14,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView result;
     private ProgressBar progressBar;
+    private List<CoronaModel> coronalist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         result = findViewById(R.id.recyclerview);
         progressBar = findViewById(R.id.progressbar);
-
+        coronalist = new ArrayList<>();
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .baseUrl("https://api.covid19api.com")
@@ -48,12 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 try
                 {
                     JSONArray array = new JSONArray(data);
-                    /*result.setText("");*/
                     for(int i = array.length()-1; i>=0 ;i--){
                         JSONObject object = array.getJSONObject(i);
                         int confirmed_cases = object.getInt("Confirmed");
+                        int active_cases = object.getInt("Active");
+                        int deaths = object.getInt("Deaths");
                         String date = object.getString("Date");
-                        /*result.append("Date: "+date.substring(0,10)+" Confirmed: "+confirmed_cases+"\n\n");*/
+                        CoronaModel coronaModel = new CoronaModel(date,confirmed_cases,active_cases,deaths);
+                        coronalist.add(coronaModel);
                     }
 
                 }
