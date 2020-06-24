@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 try
                 {
                     JSONArray array = new JSONArray(data);
-                    for(int i = array.length()-1; i>=0 ;i--){
+                    for(int i = 0; i<array.length() ;i++){
                         JSONObject object = array.getJSONObject(i);
                         int confirmed_cases = object.getInt("Confirmed");
                         int active_cases = object.getInt("Active");
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         CoronaModel coronaModel = new CoronaModel(date,confirmed_cases,active_cases,deaths);
                         coronalist.add(coronaModel);
                     }
+                    result.setAdapter(new CoronaAdapter(MainActivity.this,coronalist));
 
                 }
                 catch (JSONException e)
