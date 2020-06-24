@@ -32,7 +32,7 @@ public class CoronaAdapter extends RecyclerView.Adapter<CoronaViewHolder>
     @Override
     public void onBindViewHolder(@NonNull CoronaViewHolder holder, int position) {
 
-        holder.date.setText(coronaModels.get(position).date);
+        holder.date.setText((coronaModels.get(position).date).substring(0,10));
         holder.total_cases.setText("Total :"+String.valueOf(coronaModels.get(position).getTotal_cases()));
         holder.active_cases.setText("Active :"+String.valueOf(coronaModels.get(position).getActive_cases()));
         holder.deaths.setText("Deaths :"+String.valueOf(coronaModels.get(position).getDeaths()));
