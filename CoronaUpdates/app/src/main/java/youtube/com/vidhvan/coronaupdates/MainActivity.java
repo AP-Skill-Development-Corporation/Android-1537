@@ -1,6 +1,7 @@
 package youtube.com.vidhvan.coronaupdates;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +22,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView result;
+    private RecyclerView result;
     private ProgressBar progressBar;
 
     @Override
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        result = findViewById(R.id.data);
+        result = findViewById(R.id.recyclerview);
         progressBar = findViewById(R.id.progressbar);
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -47,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 try
                 {
                     JSONArray array = new JSONArray(data);
-                    result.setText("");
+                    /*result.setText("");*/
                     for(int i = array.length()-1; i>=0 ;i--){
                         JSONObject object = array.getJSONObject(i);
                         int confirmed_cases = object.getInt("Confirmed");
                         String date = object.getString("Date");
-                        result.append("Date: "+date.substring(0,10)+" Confirmed: "+confirmed_cases+"\n\n");
+                        /*result.append("Date: "+date.substring(0,10)+" Confirmed: "+confirmed_cases+"\n\n");*/
                     }
 
                 }
