@@ -1,25 +1,27 @@
 package youtube.com.vidhvan.coronaupdates.activities;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
-import youtube.com.vidhvan.coronaupdates.CountriesViewModel;
+import youtube.com.vidhvan.coronaupdates.InternetConnectivity;
+import youtube.com.vidhvan.coronaupdates.viewmodels.CountriesViewModel;
 import youtube.com.vidhvan.coronaupdates.Covid19Service;
 import youtube.com.vidhvan.coronaupdates.R;
 import youtube.com.vidhvan.coronaupdates.adapters.CountriesAdapter;
@@ -40,8 +42,26 @@ public class CountriesList extends AppCompatActivity {
         countries_list = findViewById(R.id.countries_list);
         progressBar = findViewById(R.id.progress);
         progressBar.setVisibility(View.GONE);
+
         if(countriesViewModel.lists.size() == 0){
-            load_data_from_internet();
+            if(!InternetConnectivity.isInternetAvailable(this)){
+
+                new AlertDialog.Builder(this)
+                        .setIcon(R.drawable.internet)
+                        .setTitle("Sorry! You are not connected To Internet!")
+                        .setMessage("Try Connecting back to internet and Retry to load our Data!\nClick Cancel to close the app\nClick Ok to Retry!")
+                        .setPositiveButton("OK",null)
+                        .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .show();
+
+            }else{
+                load_data_from_internet();
+            }
         }
         else
         {

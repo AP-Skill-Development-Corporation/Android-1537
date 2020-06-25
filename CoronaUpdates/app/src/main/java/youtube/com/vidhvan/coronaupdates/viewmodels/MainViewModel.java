@@ -1,4 +1,4 @@
-package youtube.com.vidhvan.coronaupdates;
+package youtube.com.vidhvan.coronaupdates.viewmodels;
 
 import android.util.Log;
 

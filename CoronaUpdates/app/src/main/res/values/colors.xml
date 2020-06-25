@@ -12,4 +12,5 @@
     <color name="deaths_text_color">#737070</color>
     <color name="countries_design_background">#0D3502</color>
     <color name="country_name_text_color">#FFFFFF</color>
+    <color name="white">#ffffff</color>
 </resources>

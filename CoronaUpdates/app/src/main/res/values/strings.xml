@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Corona Updates</string>
+    <string name="error_message">This API doesnot have any data related to this country.</string>
 </resources>
