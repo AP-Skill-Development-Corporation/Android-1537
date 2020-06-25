@@ -54,3 +54,10 @@
 
 #### [Day-7 Recorded Video Link Part-1 (22-06-2020)](https://youtu.be/Ydn84YvrhrA?list=PLodYIve2fV8aMnScAdRoy5CZaTCtnHCAv&t=4)
 #### [Day-7 Recorded Video Link Part-2 (22-06-2020)](https://youtu.be/UaTulQulvg4?list=PLodYIve2fV8aMnScAdRoy5CZaTCtnHCAv)
+#### [Day-8 Recorded Video Link(23-06-2020)](https://youtu.be/yEoFZzRrnaY)
+#### [Day-9 Recorded Video Link (24-06-2020)](https://youtu.be/RgmtVPFCx2Y)
+#### [Day-10 Recorded Video Link(25-06-2020) PART-1](https://youtu.be/kl8r9ClIQxs)
+
+- [Read About ViewModel Here](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- [Guide to Learn ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)
+
