@@ -1,4 +1,4 @@
-package youtube.com.vidhvan.coronaupdates;
+package youtube.com.vidhvan.coronaupdates.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import youtube.com.vidhvan.coronaupdates.models.CoronaModel;
+import youtube.com.vidhvan.coronaupdates.R;
 
 public class CoronaAdapter extends RecyclerView.Adapter<CoronaViewHolder>
 {
@@ -32,7 +35,7 @@ public class CoronaAdapter extends RecyclerView.Adapter<CoronaViewHolder>
     @Override
     public void onBindViewHolder(@NonNull CoronaViewHolder holder, int position) {
 
-        holder.date.setText((coronaModels.get(position).date).substring(0,10));
+        holder.date.setText((coronaModels.get(position).getDate()).substring(0,10));
         holder.total_cases.setText("Total\n"+String.valueOf(coronaModels.get(position).getTotal_cases()));
         holder.active_cases.setText("Active\n"+String.valueOf(coronaModels.get(position).getActive_cases()));
         holder.deaths.setText("Deaths\n"+String.valueOf(coronaModels.get(position).getDeaths()));

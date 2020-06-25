@@ -1,4 +1,4 @@
-package youtube.com.vidhvan.coronaupdates;
+package youtube.com.vidhvan.coronaupdates.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -22,6 +21,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
+import youtube.com.vidhvan.coronaupdates.Covid19Service;
+import youtube.com.vidhvan.coronaupdates.R;
+import youtube.com.vidhvan.coronaupdates.adapters.CoronaAdapter;
+import youtube.com.vidhvan.coronaupdates.models.CoronaModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String slug = getIntent().getStringExtra("SLUG");
+        String country_n = getIntent().getStringExtra("COUNTRY");
+        setTitle(country_n);
         result = findViewById(R.id.recyclerview);
         progressBar = findViewById(R.id.progressbar);
         coronalist = new ArrayList<>();
@@ -43,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Covid19Service service = retrofit.create(Covid19Service.class);
-        Call<String> str = service.getDataOfIndia();
+        Call<String> str = service.getDataOfIndia(slug);
         str.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {

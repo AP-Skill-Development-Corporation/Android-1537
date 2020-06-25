@@ -1,10 +1,12 @@
-package youtube.com.vidhvan.coronaupdates;
+package youtube.com.vidhvan.coronaupdates.adapters;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import youtube.com.vidhvan.coronaupdates.R;
 
 public class CoronaViewHolder extends RecyclerView.ViewHolder
 {

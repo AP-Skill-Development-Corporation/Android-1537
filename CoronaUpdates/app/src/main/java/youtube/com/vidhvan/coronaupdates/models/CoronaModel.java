@@ -1,4 +1,4 @@
-package youtube.com.vidhvan.coronaupdates;
+package youtube.com.vidhvan.coronaupdates.models;
 
 public class CoronaModel
 {
