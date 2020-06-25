@@ -2,18 +2,17 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#0D3502"
-    android:layout_margin="5dp"
+    android:background="@color/countries_design_background"
+    android:layout_margin="@dimen/margin_value_for_data"
     android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/country_name"
-        android:text="India"
         android:textAllCaps="true"
-        android:textSize="20sp"
+        android:textSize="@dimen/countries_text_size"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_margin="10dp"
+        android:textColor="@color/country_name_text_color"
+        android:layout_margin="@dimen/countries_text_view_margin"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

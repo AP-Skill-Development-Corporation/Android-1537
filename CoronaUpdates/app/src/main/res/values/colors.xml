@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="countries_data_background">#E7E9EC</color>
+    <color name="date_bg_color">#00FFD8</color>
+    <color name="date_text_color">#000000</color>
+    <color name="divider_color">#000000</color>
+    <color name="confirmed_cases_text_color">#CD0808</color>
+    <color name="active_cases_text_color">#AF07AD</color>
+    <color name="deaths_text_color">#737070</color>
+    <color name="countries_design_background">#0D3502</color>
+    <color name="country_name_text_color">#FFFFFF</color>
 </resources>

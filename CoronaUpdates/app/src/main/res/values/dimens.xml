@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_value_for_data">5dp</dimen>
+    <dimen name="date_text_size">18sp</dimen>
+    <dimen name="horizontal_divider_height">2dp</dimen>
+    <dimen name="margin_top_inner_linearlayout">10dp</dimen>
+    <dimen name="margin_bottom_for_inner_linearlayout">10dp</dimen>
+    <dimen name="layout_width_dim_textview">0dp</dimen>
+    <dimen name="text_size_for_inner_linearlayout">16sp</dimen>
+    <dimen name="divider_width_size">2dp</dimen>
+    <dimen name="countries_text_size">20sp</dimen>
+    <dimen name="countries_text_view_margin">10dp</dimen>
+</resources>
