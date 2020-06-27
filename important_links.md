@@ -63,3 +63,7 @@
 - [Read About Room Database Here](https://developer.android.com/training/data-storage/room)
 - [Understand the Power of Firebase](https://console.firebase.google.com/)
 - [Firebase in a weekend - Udacity Free Course](https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)
+
+
+#### [Day-11 Video Recording Link (26-06-2020)](https://youtu.be/xDbyfBc6vnk)
+
