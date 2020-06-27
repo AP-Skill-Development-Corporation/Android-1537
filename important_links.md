@@ -61,4 +61,5 @@
 - [Read About ViewModel Here](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [Guide to Learn ViewModel](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 - [Read About Room Database Here](https://developer.android.com/training/data-storage/room)
-
+- [Understand the Power of Firebase](https://console.firebase.google.com/)
+- [Firebase in a weekend - Udacity Free Course](https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352)
